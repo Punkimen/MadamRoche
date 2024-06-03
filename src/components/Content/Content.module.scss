@@ -3,6 +3,7 @@
 }
 
 .photos {
+  display: flex;
   position: relative;
   max-width: 371px;
   width: 100%;
@@ -13,6 +14,14 @@
   position: relative;
   rotate: -8deg;
   left: 24px;
+  max-width: 254px;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .ticket {
@@ -20,6 +29,14 @@
   rotate: 22deg;
   top: 60px;
   right: 15px;
+  max-width: 142px;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content {

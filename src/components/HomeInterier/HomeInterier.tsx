@@ -3,6 +3,7 @@ import photo from "@/../public/img/photo_3.png";
 import interier from "@/../public/img/interier.png";
 import TextMain from "components/TextMain/TextMain.tsx";
 import s from "./HomeInterier.module.scss";
+import {Parallax} from "react-scroll-parallax";
 
 const HomeInterier = () => {
   return (
@@ -11,7 +12,9 @@ const HomeInterier = () => {
         <div className={s.photo}>
           <img src={photo} alt="Фото в профиль" />
           <div className={s.decor}>
-            <img src={hieroglyph} alt="иероглиф" />
+            <Parallax speed={-10}>
+              <img src={hieroglyph} alt="иероглиф" />
+            </Parallax>
           </div>
         </div>
         <TextMain className={s.text}>

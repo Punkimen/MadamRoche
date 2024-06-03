@@ -2,6 +2,7 @@ import s from "./Content.module.scss";
 import TextMain from "components/TextMain/TextMain.tsx";
 import photo from "@/../public/img/photo_1.png";
 import ticket from "@/../public/img/ticket.png";
+import {Parallax} from "react-scroll-parallax";
 
 const Content = () => {
   return (
@@ -20,8 +21,16 @@ const Content = () => {
           </p>
         </TextMain>
         <div className={s.photos}>
-          <img className={s.photo} src={photo} alt="photo madam" />
-          <img className={s.ticket} src={ticket} alt="photo ticket" />
+          <div className={s.photo}>
+            <Parallax speed={5}>
+              <img src={photo} alt="photo madam" />
+            </Parallax>
+          </div>
+          <div className={s.ticket}>
+            <Parallax speed={-5}>
+              <img src={ticket} alt="photo ticket" />
+            </Parallax>
+          </div>
         </div>
       </div>
       <TextMain className={s.text_1}>
