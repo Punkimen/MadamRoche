@@ -1,0 +1,24 @@
+.block {
+  padding: 0 15px;
+  position: relative;
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'GentoDream', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.3;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 162px;
+}
+
+.decor {
+  position: absolute;
+  top: 130px;
+  right: -140px;
+}

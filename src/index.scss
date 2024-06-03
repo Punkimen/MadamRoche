@@ -1,0 +1,57 @@
+@import './styles/fonts';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  line-height: 1.44;
+
+  color-scheme: light dark;
+  color: #000;
+  background-color: #F0EEDB;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-main: #C22727;
+  --color-accent: #290B0B;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: inherit;
+  transition: color ease-out .3s;
+
+  &:hover {
+    color: var(--color-main);
+  }
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.color-accent {
+  color: var(--color-accent);
+}

@@ -1,0 +1,44 @@
+.interier {
+  margin-bottom: 260px;
+
+  .text {
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 145px;
+  }
+}
+
+.photo {
+  position: relative;
+  max-width: 394px;
+  width: 100%;
+  margin: 0 auto 130px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.decor {
+  position: absolute;
+  width: 1110px;
+  bottom: -90px;
+  right: -203px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+}
+
+.big-photo {
+  max-width: 1810px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+.menu {
+  .text {
+    max-width: 428px;
+    margin-bottom: 113px;
+  }
+
+  .btn {
+    margin-bottom: 387px;
+  }
+}
+
+.photos {
+  position: relative;
+  max-width: 909px;
+  width: 100%;
+  margin: 0 auto 133px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.ticket {
+  max-width: 270px;
+  position: absolute;
+  top: 50px;
+  right: -135px;
+  rotate: -8deg;
+}
