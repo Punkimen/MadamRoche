@@ -1,6 +1,8 @@
+@import '@/styles/variable';
+
 .welcome {
   padding-top: 22dvh;
-  margin-bottom: 143px;
+  margin-bottom: toRem(143);
   @media(max-width: 768px) {
     padding-top: 10dvh;
   }
@@ -14,13 +16,13 @@
 
 .logo {
   display: block;
-  max-width: 285px;
+  max-width: toRem(285);
   width: 100%;
-  margin-bottom: 180px;
+  margin-bottom: toRem(180);
 
   @media(max-width: 768px) {
-    max-width: 200px;
-    margin-bottom: 90px;
+    max-width: toRem(200);
+    margin-bottom: toRem(90);
   }
 
   img {
@@ -31,11 +33,11 @@
 }
 
 .photo {
-  max-width: 790px;
+  max-width: toRem(790);
   width: 100%;
   margin: 0 auto;
   position: relative;
-  left: 100px;
+  left: toRem(100);
 
   @media(max-width: 768px) {
     left: 0;

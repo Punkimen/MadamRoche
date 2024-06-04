@@ -1,20 +1,22 @@
+@import '@/styles/variable';
+
 .text {
-  margin-bottom: 143px;
+  margin-bottom: toRem(143);
 }
 
 .photos {
   display: flex;
   position: relative;
-  max-width: 371px;
+  max-width: toRem(371);
   width: 100%;
-  margin: 0 auto 135px;
+  margin: 0 auto toRem(135);
 }
 
 .photo {
   position: relative;
   rotate: -8deg;
-  left: 24px;
-  max-width: 254px;
+  left: toRem(24);
+  max-width: toRem(254);
   width: 100%;
 
   img {
@@ -27,9 +29,9 @@
 .ticket {
   position: relative;
   rotate: 22deg;
-  top: 60px;
-  right: 15px;
-  max-width: 142px;
+  top: toRem(60);
+  right: toRem(15);
+  max-width: toRem(142);
   width: 100%;
 
   img {
@@ -40,13 +42,13 @@
 }
 
 .content {
-  margin-bottom: 433px;
+  margin-bottom: toRem(433);
 
   @media(max-width: 768px){
-    margin-bottom: 200px;
+    margin-bottom: toRem(200);
   }
 
   .text_1 {
-    max-width: 360px;
+    max-width: toRem(360);
   }
 }

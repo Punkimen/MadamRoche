@@ -1,21 +1,22 @@
+@import '@/styles/variable';
 .footer {
-  padding: 188px 0 207px;
+  padding: toRem(188) 0 toRem(207);
 
   @media(max-width: 768px) {
-    padding: 60px 0 120px;
+    padding: toRem(60) 0 toRem(120);
   }
 
   .text {
     color: var(--color-main);
-    max-width: 428px;
-    margin-bottom: 45px;
+    max-width: toRem(428);
+    margin-bottom: toRem(45);
   }
 }
 
 .logo {
-  max-width: 205px;
+  max-width: toRem(205);
   width: 100%;
-  margin: 0 auto 90px;
+  margin: 0 auto toRem(90);
 }
 
 .wrapper {
@@ -26,8 +27,8 @@
 
 .links {
   display: flex;
-  gap: 25px;
-  font-size: 14px;
+  gap: toRem(25);
+  font-size: toRem(14);
 
   a {
     color: var(--color-main);

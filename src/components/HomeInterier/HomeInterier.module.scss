@@ -1,21 +1,22 @@
+@import '@/styles/variable';
 .interier {
-  margin-bottom: 260px;
+  margin-bottom: toRem(260);
   @media(max-width: 768px) {
-    margin-bottom: 100px;
+    margin-bottom: toRem(100);
   }
 
   .text {
-    max-width: 380px;
+    max-width: toRem(380);
     width: 100%;
-    margin-bottom: 145px;
+    margin-bottom: toRem(145);
   }
 }
 
 .photo {
   position: relative;
-  max-width: 394px;
+  max-width: toRem(394);
   width: 100%;
-  margin: 0 auto 130px;
+  margin: 0 auto toRem(130);
 
   img {
     display: block;
@@ -28,9 +29,9 @@
 
 .decor {
   position: absolute;
-  width: 1110px;
-  bottom: -90px;
-  right: -203px;
+  width: toRem(1110);
+  bottom: toRem(-90);
+  right: toRem(-203);
   z-index: -1;
 
   @media(max-width: 768px) {
@@ -47,7 +48,7 @@
 }
 
 .big-photo {
-  max-width: 1810px;
+  max-width: toRem(1810);
   width: 100%;
   margin: 0 auto;
 

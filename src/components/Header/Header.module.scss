@@ -1,12 +1,14 @@
+@import '@/styles/variable';
+
 .header {
   text-align: center;
   color: var(--color-main);
-  padding: 36px 15px 0;
-  font-size: 14px;
+  padding: toRem(36) toRem(15) 0;
+  font-size: toRem(14);
   letter-spacing: 0.5px;
 
   @media(max-width: 768px) {
-    padding: 20px 15px 0;
+    padding: toRem(20) toRem(15) 0;
   }
 
   p {

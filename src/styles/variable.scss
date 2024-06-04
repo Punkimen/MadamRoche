@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@function toRem($value, $fsz: 18) {
+  $remValue: calc($value / $fsz) + rem;
+  @return $remValue;
+}

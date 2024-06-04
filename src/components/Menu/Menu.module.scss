@@ -1,28 +1,29 @@
+@import '@/styles/variable';
 .menu {
   .text {
-    max-width: 428px;
-    margin-bottom: 113px;
+    max-width: toRem(428);
+    margin-bottom: toRem(113);
 
     @media(max-width: 768px) {
-      margin-bottom: 60px;
+      margin-bottom: toRem(60);
     }
   }
 
   .btn {
-    margin-bottom: 387px;
+    margin-bottom: toRem(387);
     @media(max-width: 768px) {
-      margin-bottom: 150px;
+      margin-bottom: toRem(150);
     }
   }
 }
 
 .photos {
   position: relative;
-  max-width: 909px;
+  max-width: toRem(909);
   width: 100%;
-  margin: 0 auto 133px;
+  margin: 0 auto toRem(133);
   @media(max-width: 768px) {
-    margin-bottom: 60px;
+    margin-bottom: toRem(60);
   }
   img {
     display: block;
@@ -32,21 +33,21 @@
 }
 
 .ticket {
-  max-width: 270px;
+  max-width: toRem(270);
   position: absolute;
-  top: 50px;
-  right: -135px;
+  top: toRem(50);
+  right: toRem(-135);
   rotate: -8deg;
 
   @media(max-width: 992px){
-    max-width: 200px;
-    right: -80px;
-    top: 100px;
+    max-width: toRem(200);
+    right: toRem(-80);
+    top: toRem(100);
   }
   @media(max-width: 568px){
-    max-width: 120px;
-    right: -20px;
-    top: 100px;
+    max-width: toRem(120);
+    right: toRem(-20);
+    top: toRem(100);
   }
   img {
     display: block;
