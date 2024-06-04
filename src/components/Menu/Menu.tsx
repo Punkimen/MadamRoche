@@ -1,9 +1,10 @@
-import photo from "@/../public/img/photo_4.jpg";
-import lunaPark from "@/../public/img/luna_park_ticket.jpg";
-import TextMain from "components/TextMain/TextMain.tsx";
-import BtnMenu from "components/BtnMenu/BtnMenu.tsx";
-import s from "./Menu.module.scss";
+import photo from "/img/photo_4.jpg";
+import lunaPark from "/img/luna_park_ticket.jpg";
+import TextMain from "@/components/TextMain/TextMain.tsx";
+import BtnMenu from "@/components/BtnMenu/BtnMenu.tsx";
 import {Parallax} from "react-scroll-parallax";
+import ScrollAnimation from "react-animate-on-scroll";
+import s from "./Menu.module.scss";
 
 const Menu = () => {
   return (
@@ -15,7 +16,9 @@ const Menu = () => {
             сочетаниях соусов и высококачественных овощах, мясе и морепродуктах.
           </p>
         </TextMain>
-        <BtnMenu className={s.btn} />
+        <ScrollAnimation animateIn="pulse">
+          <BtnMenu className={s.btn} />
+        </ScrollAnimation>
         <div className={s.photos}>
           <img src={photo} alt="Чб фото детей" />
           <div className={s.ticket}>

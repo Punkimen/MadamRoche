@@ -15,10 +15,12 @@
   position: relative;
   z-index: 2;
   margin-bottom: 162px;
+  color: var(--color-main);
 }
 
 .decor {
   position: absolute;
   top: 130px;
   right: -140px;
+  z-index: -1;
 }

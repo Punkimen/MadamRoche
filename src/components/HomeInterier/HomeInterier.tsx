@@ -1,16 +1,18 @@
-import hieroglyph from "@/../public/img/hieroglyph_2.svg";
-import photo from "@/../public/img/photo_3.png";
-import interier from "@/../public/img/interier.png";
-import TextMain from "components/TextMain/TextMain.tsx";
-import s from "./HomeInterier.module.scss";
+import hieroglyph from "/img/hieroglyph_2.svg";
+import photo from "/img/photo_3.png";
+import interier from "/img/interier.png";
+import TextMain from "@/components/TextMain/TextMain.tsx";
 import {Parallax} from "react-scroll-parallax";
-
+import ScrollAnimation from "react-animate-on-scroll";
+import s from "./HomeInterier.module.scss";
 const HomeInterier = () => {
   return (
     <section className={s.interier}>
       <div className="container">
         <div className={s.photo}>
-          <img src={photo} alt="Фото в профиль" />
+          <ScrollAnimation animateIn="fadeIn">
+            <img src={photo} alt="Фото в профиль" />
+          </ScrollAnimation>
           <div className={s.decor}>
             <Parallax speed={-10}>
               <img src={hieroglyph} alt="иероглиф" />

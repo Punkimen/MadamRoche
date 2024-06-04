@@ -1,17 +1,22 @@
-import logo from "@/../public/img/Roche.svg";
-import photo from "@/../public/img/MadamPhoto.png";
-import s from "./Welcome.module.scss";
+import logo from "/img/Roche.svg";
+import photo from "/img/MadamPhoto.png";
+import ScrollAnimation from "react-animate-on-scroll";
 import cn from "classnames";
+import s from "./Welcome.module.scss";
 
 const Welcome = () => {
   return (
     <section className={s.welcome}>
       <div className={cn("container", s.content)}>
         <div className={s.logo}>
-          <img src={logo} alt="Roche" />
+          <ScrollAnimation animateIn="pulse">
+            <img src={logo} alt="Roche" />
+          </ScrollAnimation>
         </div>
         <div className={s.photo}>
-          <img src={photo} alt="Фото madam Roche" />
+          <ScrollAnimation animateIn="fadeIn">
+            <img src={photo} alt="Фото madam Roche" />
+          </ScrollAnimation>
         </div>
       </div>
     </section>

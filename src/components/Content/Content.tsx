@@ -1,8 +1,9 @@
-import s from "./Content.module.scss";
-import TextMain from "components/TextMain/TextMain.tsx";
-import photo from "@/../public/img/photo_1.png";
-import ticket from "@/../public/img/ticket.png";
+import TextMain from "@/components/TextMain/TextMain.tsx";
+import photo from "/img/photo_1.png";
+import ticket from "/img/ticket.png";
 import {Parallax} from "react-scroll-parallax";
+import ScrollAnimation from "react-animate-on-scroll";
+import s from "./Content.module.scss";
 
 const Content = () => {
   return (
@@ -21,14 +22,18 @@ const Content = () => {
           </p>
         </TextMain>
         <div className={s.photos}>
-          <div className={s.photo}>
-            <Parallax speed={5}>
-              <img src={photo} alt="photo madam" />
-            </Parallax>
-          </div>
+          <ScrollAnimation animateIn="fadeIn">
+            <div className={s.photo}>
+              <Parallax speed={5}>
+                <img src={photo} alt="photo madam" />
+              </Parallax>
+            </div>
+          </ScrollAnimation>
           <div className={s.ticket}>
             <Parallax speed={-5}>
-              <img src={ticket} alt="photo ticket" />
+              <ScrollAnimation animateIn="fadeIn">
+                <img src={ticket} alt="photo ticket" />
+              </ScrollAnimation>
             </Parallax>
           </div>
         </div>

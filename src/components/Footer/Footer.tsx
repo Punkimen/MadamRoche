@@ -1,12 +1,16 @@
-import s from "./Footer.module.scss";
-import logo from "@/../public/img/Roche.svg";
+import logo from "/img/Roche.svg";
 import cn from "classnames";
-import TextMain from "components/TextMain/TextMain.tsx";
+import TextMain from "@/components/TextMain/TextMain.tsx";
+import ScrollAnimation from "react-animate-on-scroll";
+import s from "./Footer.module.scss";
+
 const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={cn("container", s.wrapper)}>
-        <img className={s.logo} src={logo} alt="Roche" />
+        <ScrollAnimation animateIn="pulse">
+          <img className={s.logo} src={logo} alt="Roche" />
+        </ScrollAnimation>
         <TextMain className={s.text}>
           <p>Основное меню представлено актуальным и авторским comfort-food</p>
         </TextMain>
