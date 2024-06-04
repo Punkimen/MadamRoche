@@ -16,6 +16,10 @@
   z-index: 2;
   margin-bottom: 162px;
   color: var(--color-main);
+
+  @media(max-width: 768px) {
+    font-size: 10.6vw;
+  }
 }
 
 .decor {
@@ -23,4 +27,16 @@
   top: 130px;
   right: -140px;
   z-index: -1;
+
+  @media(max-width: 768px){
+    width: 90%;
+    top: -20%;
+    right: 10%;
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

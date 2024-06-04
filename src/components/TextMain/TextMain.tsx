@@ -12,7 +12,9 @@ interface ITextMain {
 const TextMain: FC<ITextMain> = ({children, className}) => {
   return (
     <div className={cn(s.text, className && className)}>
-      <ScrollAnimation animateIn="fadeIn">{children}</ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        {children}
+      </ScrollAnimation>
     </div>
   );
 };

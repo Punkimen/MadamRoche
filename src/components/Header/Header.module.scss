@@ -5,7 +5,15 @@
   font-size: 14px;
   letter-spacing: 0.5px;
 
+  @media(max-width: 768px) {
+    padding: 20px 15px 0;
+  }
+
   p {
     margin: 0 auto;
+  }
+
+  a{
+    white-space: nowrap;
   }
 }

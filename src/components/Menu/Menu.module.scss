@@ -2,10 +2,17 @@
   .text {
     max-width: 428px;
     margin-bottom: 113px;
+
+    @media(max-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
 
   .btn {
     margin-bottom: 387px;
+    @media(max-width: 768px) {
+      margin-bottom: 150px;
+    }
   }
 }
 
@@ -14,7 +21,9 @@
   max-width: 909px;
   width: 100%;
   margin: 0 auto 133px;
-
+  @media(max-width: 768px) {
+    margin-bottom: 60px;
+  }
   img {
     display: block;
     width: 100%;
@@ -29,6 +38,16 @@
   right: -135px;
   rotate: -8deg;
 
+  @media(max-width: 992px){
+    max-width: 200px;
+    right: -80px;
+    top: 100px;
+  }
+  @media(max-width: 568px){
+    max-width: 120px;
+    right: -20px;
+    top: 100px;
+  }
   img {
     display: block;
     width: 100%;

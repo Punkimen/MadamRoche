@@ -10,7 +10,7 @@ const HomeInterier = () => {
     <section className={s.interier}>
       <div className="container">
         <div className={s.photo}>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <img src={photo} alt="Фото в профиль" />
           </ScrollAnimation>
           <div className={s.decor}>

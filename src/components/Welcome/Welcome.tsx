@@ -14,7 +14,7 @@ const Welcome = () => {
           </ScrollAnimation>
         </div>
         <div className={s.photo}>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <img src={photo} alt="Фото madam Roche" />
           </ScrollAnimation>
         </div>

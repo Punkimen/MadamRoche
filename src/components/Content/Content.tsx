@@ -22,7 +22,7 @@ const Content = () => {
           </p>
         </TextMain>
         <div className={s.photos}>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div className={s.photo}>
               <Parallax speed={5}>
                 <img src={photo} alt="photo madam" />
@@ -31,7 +31,7 @@ const Content = () => {
           </ScrollAnimation>
           <div className={s.ticket}>
             <Parallax speed={-5}>
-              <ScrollAnimation animateIn="fadeIn">
+              <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                 <img src={ticket} alt="photo ticket" />
               </ScrollAnimation>
             </Parallax>

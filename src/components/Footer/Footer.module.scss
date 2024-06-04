@@ -1,6 +1,10 @@
 .footer {
   padding: 188px 0 207px;
 
+  @media(max-width: 768px) {
+    padding: 60px 0 120px;
+  }
+
   .text {
     color: var(--color-main);
     max-width: 428px;
