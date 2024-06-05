@@ -20,7 +20,11 @@
   color: var(--color-main);
 
   @media(max-width: 768px) {
-    font-size: 10.6vw;
+    font-size: toRem(50);
+  }
+
+  @media(max-width: 568px) {
+    font-size: toRem(40);
   }
 }
 
