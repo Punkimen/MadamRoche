@@ -2,8 +2,8 @@ import s from "./BtnMenu.module.scss";
 import cn from "classnames";
 import {useEffect, useRef, useState} from "react";
 
-const BtnMenu = ({className}: {className?: string}) => {
-  const btn: React.RefObject<HTMLButtonElement> = useRef(null);
+const BtnMenu = ({className, href}: {className?: string; href: string}) => {
+  const btn: React.RefObject<HTMLAnchorElement> = useRef(null);
   const posRef = useRef<{x: number; y: number}>({x: 0, y: 0});
   const [pos, setPos] = useState<{x: number; y: number}>({x: 0, y: 0});
   const ease = 0.06;
@@ -49,7 +49,8 @@ const BtnMenu = ({className}: {className?: string}) => {
   }, []);
 
   return (
-    <button
+    <a
+      href={href}
       className={cn(s.btn, className)}
       onMouseEnter={() => setPos({x: 0, y: 0})}
       onMouseMove={(e) => {
@@ -58,6 +59,7 @@ const BtnMenu = ({className}: {className?: string}) => {
       onMouseLeave={() => {
         resetPos();
       }}
+      target="_blank"
       ref={btn}
     >
       <span
@@ -67,7 +69,7 @@ const BtnMenu = ({className}: {className?: string}) => {
       >
         Menu
       </span>
-    </button>
+    </a>
   );
 };
 

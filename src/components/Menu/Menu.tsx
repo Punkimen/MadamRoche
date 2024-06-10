@@ -17,7 +17,7 @@ const Menu = () => {
           </p>
         </TextMain>
         <ScrollAnimation animateIn="pulse">
-          <BtnMenu className={s.btn} />
+          <BtnMenu href="/MadamRoche/Roche_bar_menu.pdf" className={s.btn} />
         </ScrollAnimation>
         <div className={s.photos}>
           <img src={photo} alt="Чб фото детей" />
